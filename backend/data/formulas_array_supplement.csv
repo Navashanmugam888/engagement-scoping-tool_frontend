@@ -1,9 +1,0 @@
-Metric,Formula
-Data Forms,"=IF(Data Forms[InScope]=""YES"",1,0)+IF(Data Forms[InScope]=""YES"",IFS(Data Forms[Details]="""", 0, Data Forms[Details]=1, 2, Data Forms[Details]<=4, 5, Data Forms[Details]<=10, 10, Data Forms[Details]<=15, 20, Data Forms[Details]<=25, 30, Data Forms[Details]<=35, 40, TRUE, 50),0)"
-Dashboards,"=IF(Dashboards[InScope]=""YES"",1,0)+IF(Dashboards[InScope]=""YES"",IFS(Dashboards[Details]="""", 0, Dashboards[Details]=1, 4, Dashboards[Details]<=2, 8, Dashboards[Details]<=4, 10, TRUE, 25),0)"
-Business Rules,"=IF(Business Rules[InScope]=""YES"",1,0)+IF(Business Rules[InScope]=""YES"",IFS(Business Rules[Details]="""", 0, Business Rules[Details]=1, 2, Business Rules[Details]<=2, 4, Business Rules[Details]<=5, 6, TRUE, 10),0)"
-Member Formula,"=IF(Member Formula[InScope]=""YES"",1,0)+IF(Member Formula[InScope]=""YES"",IFS(Member Formula[Details]="""", 0, Member Formula[Details]=5, 2, Member Formula[Details]<=10, 4, Member Formula[Details]<=15, 6, TRUE, 10),0)"
-Secured Dimensions,"=IF(Secured Dimensions[InScope]=""YES"",IFS(Secured Dimensions[Details]="""", 0, Secured Dimensions[Details]=1, 2, Secured Dimensions[Details]<=2, 4, Secured Dimensions[Details]<=5, 6, TRUE, 10),0)"
-Number of Users,"=IF(Number of Users[InScope]=""YES"",IFS(Number of Users[Details]="""", 0, Number of Users[Details]=10, 2, Number of Users[Details]<=20, 4, Number of Users[Details]<=50, 6, TRUE, 10),0)"
-Historical Data Validation,"=IF(Historical Data Validation[InScope]=""YES"",IFS(Historical Data Validation[Details]="""", 0, Historical Data Validation[Details]=1, 2, Historical Data Validation[Details]<=2, 4, Historical Data Validation[Details]<=5, 6, TRUE, 10),0)"
-Project Management,"=1"
