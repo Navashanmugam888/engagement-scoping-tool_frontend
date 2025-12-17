@@ -20,7 +20,8 @@ export async function GET(request) {
 
     const excelTemplatePath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "data",
       "excel_templates.py"
@@ -113,7 +114,8 @@ export async function GET(request) {
     // Read tier thresholds from config.py
     const configPath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "config.py"
     );
@@ -151,7 +153,8 @@ export async function GET(request) {
     // Read effort template data to add subtasks to tierData
     const effortTemplatePath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "data",
       "effort_template.py"
@@ -438,10 +441,11 @@ async function updateBackendExcelTemplates(
 ) {
   try {
     // Path to the Python backend excel_templates.py
-    // From project root: backend_scoping_test/backend/data/excel_templates.py
+    // From project root: ../Engagement_Scoping_backend/backend/data/excel_templates.py
     const excelTemplatesPath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "data",
       "excel_templates.py"
@@ -598,10 +602,11 @@ function generateAPP_TIERS_ROLES(availableRoles) {
 async function updateBackendEffortTemplate(effortData) {
   try {
     // Path to the Python backend effort_template.py
-    // From project root: backend_scoping_test/backend/data/effort_template.py
+    // From project root: ../Engagement_Scoping_backend/backend/data/effort_template.py
     const effortTemplatePath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "data",
       "effort_template.py"
@@ -718,7 +723,8 @@ async function updateBackendConfig(tierThresholds, availableRoles) {
   try {
     const configPath = path.join(
       process.cwd(),
-      "backend_scoping_test",
+      "..",
+      "Engagement_Scoping_backend",
       "backend",
       "config.py"
     );
